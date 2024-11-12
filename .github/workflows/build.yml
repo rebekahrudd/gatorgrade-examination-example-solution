@@ -22,7 +22,7 @@ on:
 # Create a job matrix with different OSes
 jobs:
   build:
-    # do not allow a build to run for more than 5 minutes
+    # Do not allow a build to run for more than 5 minutes
     timeout-minutes: 5
     # Use a matrix strategy to run on multiple OSes and Python versions
     runs-on: ${{ matrix.os }}
@@ -44,11 +44,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      # Install pip
-      - name: Install Pip
-        if: always()
+      # Install pip and upgrade it if on Linux or macOS
+      - name: Install and Upgrade Pip
+        if: runner.os != 'Windows'
+        run: python -m pip install --no-cache-dir --upgrade pip
+      # Install pipx and pip dependencies on Windows
+      - name: Install Pipx and Dependencies
+        if: runner.os == 'Windows'
         run: |
-          pip install -U pip
+          python -m pip install --no-cache-dir --upgrade pip
           python -m pip install --user pipx
       # Install poetry
       - name: Install Poetry and Project Dependencies
@@ -82,10 +86,10 @@ jobs:
         with:
           format: YYYYMMDD-HH-mm-ss
           utcOffset: "-05:00"
-      # Write the collected GatorGrade data to the designated branch
+      # Conditionally write collected data to the designated branch on Linux or macOS
       - name: Write Collected Data to Designated Branch
+        if: runner.os != 'Windows'
         uses: GatorEducator/BranchWrite@v1.0.1
-        if: always()
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           branch: insight
