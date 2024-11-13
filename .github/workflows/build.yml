@@ -38,7 +38,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
       # Setup Python for the current language version
       - name: Setup Python ${{ matrix.python-version }}
         if: always()
@@ -48,13 +47,9 @@ jobs:
       # Install pip
       - name: Install Pip
         if: always()
-        shell: bash
         run: |
-          if [[ "$RUNNER_OS" == "Windows" ]]; then
-            python.exe -m pip install --upgrade pip
-          else
-            pip install -U pip
-          fi
+          pip install -U pip
+          python -m pip install --user pipx
       # Install poetry
       - name: Install Poetry and Project Dependencies
         if: always()
@@ -79,28 +74,3 @@ jobs:
          pipx list
          cd exam
          gatorgrade --report env md GITHUB_STEP_SUMMARY
-      # Get the current time
-      - name: Get the Current Time
-        uses: josStorer/get-current-time@v2
-        if: always()
-        id: current-time
-        with:
-          format: YYYYMMDD-HH-mm-ss
-          utcOffset: "-05:00"
-
-      # Configure Safe Directory for Git on Windows
-      - name: Configure Safe Directory for Git (Windows)
-        if: runner.os == 'Windows'
-        run: |
-          git config --global --add safe.directory D:\a\gatorgrade-examination-example-solution\gatorgrade-examination-example-solution
-
-      # Write the collected GatorGrade data to the designated branch
-      - name: Write Collected Data to Designated Branch
-        uses: GatorEducator/BranchWrite@v1.0.1
-        if: always()
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          branch: insight
-          path: insight/insight-report-${{ steps.current-time.outputs.formattedTime }}.json
-          source: env
-          source-arg: JSON_REPORT
