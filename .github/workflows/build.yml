@@ -45,15 +45,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      # Install Pip
+      # Install pip
       - name: Install Pip
         if: always()
+        shell: bash
         run: |
           if [[ "$RUNNER_OS" == "Windows" ]]; then
             python.exe -m pip install --upgrade pip
           else
             pip install -U pip
-            python -m pip install --user pipx
           fi
       # Install poetry
       - name: Install Poetry and Project Dependencies
