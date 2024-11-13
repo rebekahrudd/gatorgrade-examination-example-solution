@@ -22,7 +22,7 @@ on:
 # Create a job matrix with different OSes
 jobs:
   build:
-    # Do not allow a build to run for more than 5 minutes
+    # do not allow a build to run for more than 5 minutes
     timeout-minutes: 5
     # Use a matrix strategy to run on multiple OSes and Python versions
     runs-on: ${{ matrix.os }}
@@ -38,22 +38,23 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
       # Setup Python for the current language version
       - name: Setup Python ${{ matrix.python-version }}
         if: always()
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      # Install pip and upgrade it if on Linux or macOS
-      - name: Install and Upgrade Pip
-        if: runner.os != 'Windows'
-        run: python -m pip install --no-cache-dir --upgrade pip
-      # Install pipx and pip dependencies on Windows
-      - name: Install Pipx and Dependencies
-        if: runner.os == 'Windows'
+      # Install Pip
+      - name: Install Pip
+        if: always()
         run: |
-          python -m pip install --no-cache-dir --upgrade pip
-          python -m pip install --user pipx
+          if [[ "$RUNNER_OS" == "Windows" ]]; then
+            python.exe -m pip install --upgrade pip
+          else
+            pip install -U pip
+            python -m pip install --user pipx
+          fi
       # Install poetry
       - name: Install Poetry and Project Dependencies
         if: always()
@@ -86,13 +87,20 @@ jobs:
         with:
           format: YYYYMMDD-HH-mm-ss
           utcOffset: "-05:00"
-      # Conditionally write collected data to the designated branch on Linux or macOS
+
+      # Configure Safe Directory for Git on Windows
+      - name: Configure Safe Directory for Git (Windows)
+        if: runner.os == 'Windows'
+        run: |
+          git config --global --add safe.directory D:\a\gatorgrade-examination-example-solution\gatorgrade-examination-example-solution
+
+      # Write the collected GatorGrade data to the designated branch
       - name: Write Collected Data to Designated Branch
-        if: runner.os != 'Windows'
         uses: GatorEducator/BranchWrite@v1.0.1
+        if: always()
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           branch: insight
-          path: insight/insight-report-${{steps.current-time.outputs.formattedTime}}.json
+          path: insight/insight-report-${{ steps.current-time.outputs.formattedTime }}.json
           source: env
           source-arg: JSON_REPORT
