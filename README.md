@@ -42,6 +42,6 @@ materials or your laptop computer out of Alden Hall when completing the examinat
 - Your final score for this assessment is subject to revision following review by the course instructor.
 - You may talk to the course instructor if you have questions about or you need troubleshooting help with this assessment.
 
-## testing sparkles
+## testing construction sign
 
-✨
+🚧
