@@ -13,6 +13,6 @@ I adhered to the Allegheny College Honor Code while completing this examination.
 I adhered to the Allegheny College Honor Code while completing this examination.
 I adhered to the Allegheny College Honor Code while completing this examination.
 
-## testing sparkles
+## testing construction sign
 
-✨
+🚧
