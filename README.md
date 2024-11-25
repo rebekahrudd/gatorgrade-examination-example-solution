@@ -42,18 +42,6 @@ I adhered to the Allegheny College Honor Code while completing this examination.
 
 <!---toc end-->
 
-## ✨ Quick Task List
-## Quick Task List
-
-## 🧗 Introduction
-## Introduction
-
-If you are a student completing this assessment as part of a class at Allegheny
-College, you will need to complete the programming tasks according to the
-@@ -45,11 +45,11 @@ please see the course instructor during the assessment time period. You must
-read and ensure that you understand all of the instructions in this file before
-starting the assessment.
-
 ## 😁 Note: Student Name
 ## Note: Student Name
 
@@ -62,23 +50,5 @@ Note: You must delete `Student Name` and add your name to the subsection header
 ## 🚧 Honor Code
 ## Honor Code
 
-- You **must** adhere to the Honor Code throughout your completion of the assessment
-- You **must** answer all of the questions in the assessment using your own source code and documentation
-@@ -70,7 +70,7 @@ violation. Please make sure that you review the [Allegheny College Honor
-Code](https://sites.allegheny.edu/about/honor-code/) before you start to take
-this assessment.
-
 ## 🌟 Re-type the sentence 
 ## Re-type the sentence 
-
-Note: You must retype the sentence here in order to digitally sign your pledge.
-
-@@ -82,7 +82,7 @@ while completing the assessment.
-
-Note: Please list here the sources that you consulted while completing the examination!
-
-## 🌐 Example Examination Overview
-## Example Examination Overview
-
-- **Examination Released**: At the start of your session
-- **Examination Due**: At the end of your session
