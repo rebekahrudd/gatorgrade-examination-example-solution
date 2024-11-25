@@ -9,8 +9,8 @@
 - [X] Frequently use Git to `commit` and `push` your work to the repository
 - [X] Adhere to all of the restrictions and regulations stated in this document
 
-I adhered to the Allegheny College Honor Code while completing this examination.
-I adhered to the Allegheny College Honor Code while completing this examination.
+🚧 I adhered to the Allegheny College Honor Code while completing this examination.
+✨ I adhered to the Allegheny College Honor Code while completing this examination.
 I adhered to the Allegheny College Honor Code while completing this examination.
 
 ## testing construction sign
