@@ -36,7 +36,6 @@ I adhered to the Allegheny College Honor Code while completing this examination.
   * [Introduction](#-introduction)
   * [Note: Student Name](#-note-student-name)
   * [Honor Code](#-honor-code)
-  * [Re-type the sentence "I adhered to the Allegheny College Honor Code while completing this examination."](#-re-type-the-sentence-i-adhered-to-the-allegheny-college-honor-code-while-completing-this-examination)
   * [Examination Overview](#-examination-overview)
   * [Distribution Requirements](#-distribution-requirements)
   * [Learning Objectives](#-learning-objectives)
