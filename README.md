@@ -9,17 +9,12 @@
 - [X] Frequently use Git to `commit` and `push` your work to the repository
 - [X] Adhere to all of the restrictions and regulations stated in this document
 
-🚧 I adhered to the Allegheny College Honor Code while completing this examination.
-✨ I adhered to the Allegheny College Honor Code while completing this examination.
+I adhered to the Allegheny College Honor Code while completing this examination.
+I adhered to the Allegheny College Honor Code while completing this examination.
 I adhered to the Allegheny College Honor Code while completing this examination.
 
-## 😁 Note: Student Name
 ## Note: Student Name
 
-Note: You must delete `Student Name` and add your name to the subsection header
-
-## 🚧 Honor Code
 ## Honor Code
 
-## 🌟 Re-type the sentence 
 ## Re-type the sentence 
