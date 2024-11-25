@@ -41,3 +41,7 @@ materials or your laptop computer out of Alden Hall when completing the examinat
 - You may review details from running the automated assessment in GitHub by using the GitHub Actions tab.
 - Your final score for this assessment is subject to revision following review by the course instructor.
 - You may talk to the course instructor if you have questions about or you need troubleshooting help with this assessment.
+
+## testing sparkles
+
+✨
