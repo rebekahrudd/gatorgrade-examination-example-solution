@@ -29,7 +29,6 @@ I adhered to the Allegheny College Honor Code while completing this examination.
   * [🧗 Introduction](#-introduction)
   * [😁 Note: Student Name](#-note-student-name)
   * [🚧 Honor Code](#-honor-code)
-  * [🌟 Re-type the sentence "I adhered to the Allegheny College Honor Code while completing this examination."](#-re-type-the-sentence-i-adhered-to-the-allegheny-college-honor-code-while-completing-this-examination)
   * [🌐 Examination Overview](#-examination-overview)
   * [📓 Distribution Requirements](#-distribution-requirements)
   * [📙 Learning Objectives](#-learning-objectives)
@@ -46,12 +45,6 @@ I adhered to the Allegheny College Honor Code while completing this examination.
 
 ## ✨ Quick Task List
 ## Quick Task List
-
-- [X] Read the `Introduction` section for a brief overview
-- [X] Read the `Honor Code` section and then digitally sign your pledge
-@@ -35,7 +35,7 @@
-- [X] Frequently use Git to `commit` and `push` your work to the repository
-- [X] Adhere to all of the restrictions and regulations stated in this document
 
 ## 🧗 Introduction
 ## Introduction
@@ -76,8 +69,8 @@ Note: You must delete `Student Name` and add your name to the subsection header
 Code](https://sites.allegheny.edu/about/honor-code/) before you start to take
 this assessment.
 
-## 🌟 Re-type the sentence "I adhered to the Allegheny College Honor Code while completing this examination."
-## Re-type the sentence "I adhered to the Allegheny College Honor Code while completing this examination."
+## 🌟 Re-type the sentence 
+## Re-type the sentence 
 
 Note: You must retype the sentence here in order to digitally sign your pledge.
 
