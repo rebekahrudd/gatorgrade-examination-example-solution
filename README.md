@@ -13,35 +13,6 @@
 ✨ I adhered to the Allegheny College Honor Code while completing this examination.
 I adhered to the Allegheny College Honor Code while completing this examination.
 
-# 🚀 Gatorgrade Examination Example: Solution
-# Gatorgrade Examination Example: Solution
-
-![Platforms: Linux, MacOS, Windows](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS%20%7C%20Windows-blue.svg)
-[![Language: Python](https://img.shields.io/badge/Language-Python-blue.svg)](https://www.python.org/)
-@@ -9,20 +9,20 @@
-
-<!---toc start-->
-
-* [🚀 Executable Examination Example](#-executable-examination-example)
-* [Executable Examination Example](#-executable-examination-example)
-* [Table of Contents](#table-of-contents)
-  * [✨ Quick Task List](#-quick-task-list)
-  * [🧗 Introduction](#-introduction)
-  * [😁 Note: Student Name](#-note-student-name)
-  * [🚧 Honor Code](#-honor-code)
-  * [🌐 Examination Overview](#-examination-overview)
-  * [📓 Distribution Requirements](#-distribution-requirements)
-  * [📙 Learning Objectives](#-learning-objectives)
-  * [Quick Task List](#-quick-task-list)
-  * [Introduction](#-introduction)
-  * [Note: Student Name](#-note-student-name)
-  * [Honor Code](#-honor-code)
-  * [Examination Overview](#-examination-overview)
-  * [Distribution Requirements](#-distribution-requirements)
-  * [Learning Objectives](#-learning-objectives)
-
-<!---toc end-->
-
 ## 😁 Note: Student Name
 ## Note: Student Name
 
