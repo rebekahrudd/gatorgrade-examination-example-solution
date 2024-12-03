@@ -63,10 +63,11 @@ jobs:
           poetry run execexam . ./tests/ --report trace --report status --report failure --report code --report setup  --no-fancy
       # Run GatorGrader: use the gatorgrade.yml in repository's root;
       # note that this runs execexam for some of the checks
+      #  git+https://github.com/GatorEducator/gatorgrade@windows_bug`
       - name: Run GatorGrader with GatorGrade
         if: always()
         run:  |
-         git+https://github.com/GatorEducator/gatorgrade@windows_bug`
+         pipx install gatorgrade
          pipx list
          cd exam
          gatorgrade --report env md GITHUB_STEP_SUMMARY
