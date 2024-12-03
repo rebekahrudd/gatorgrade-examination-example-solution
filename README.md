@@ -19,5 +19,5 @@ I adhered to the Allegheny College Honor Code while completing this examination.
 ## 🚧 Honor Code
 ## Honor Code
 
-## 🌟 Re-type the sentence 
+## ✨ Re-type the sentence 
 ## Re-type the sentence 
