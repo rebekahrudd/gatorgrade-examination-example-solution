@@ -67,7 +67,7 @@ jobs:
       - name: Run GatorGrader with GatorGrade
         if: always()
         run:  |
-         git+https://github.com/GatorEducator/gatorgrade@windows_bug`
+         git+https://github.com/GatorEducator/gatorgrade/tree/windows_bug@windows_bug`
          pipx list
          cd exam
          gatorgrade --report env md GITHUB_STEP_SUMMARY
