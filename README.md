@@ -12,7 +12,7 @@
 I adhered to the Allegheny College Honor Code while completing this examination.
 I adhered to the Allegheny College Honor Code while completing this examination.
 I adhered to the Allegheny College Honor Code while completing this examination.
-
+ 
 ## 😁 Note: Student Name
 ## Note: Student Name
 
